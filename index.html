@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💰 Expense Tracker</h1>
+
+        <div class="balance">
+            <h3>Balance</h3>
+            <h2 id="balance">₹0</h2>
+        </div>
+
+        <form id="form">
+
+            <input type="text" id="text" placeholder="Enter Description" required>
+
+            <input type="number" id="amount" placeholder="Enter Amount" required>
+
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Hostel</option>
+                <option>Shopping</option>
+                <option>Other</option>
+            </select>
+
+            <button>Add Expense</button>
+
+        </form>
+
+        <h3>History</h3>
+        <ul id="list"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

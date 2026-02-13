@@ -3,42 +3,78 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Expense Tracker</title>
+    <title>Expense Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
 
     <div class="container">
 
-        <h1>💰 Expense Tracker</h1>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>💜 Zealz</h2>
 
-        <div class="balance">
-            <h3>Balance</h3>
-            <h2 id="balance">₹0</h2>
+            <div class="profile">
+                <img src="https://i.pravatar.cc/100" alt="">
+                <p>Divya Reddy</p>
+            </div>
+
+            <ul>
+                <li>Dashboard</li>
+                <li>Transactions</li>
+                <li>Wallet</li>
+                <li>Sign Out</li>
+            </ul>
         </div>
 
-        <form id="form">
+        <!-- Main -->
+        <div class="main">
 
-            <input type="text" id="text" placeholder="Enter Description" required>
+            <h2>Welcome Back, Divya 👋</h2>
 
-            <input type="number" id="amount" placeholder="Enter Amount" required>
+            <!-- Cards -->
+            <div class="cards">
 
-            <select id="category">
-                <option>Food</option>
-                <option>Travel</option>
-                <option>Hostel</option>
-                <option>Shopping</option>
-                <option>Other</option>
-            </select>
+                <div class="card">
+                    <h4>Balance</h4>
+                    <h2>₹32,500</h2>
+                </div>
 
-            <button>Add Expense</button>
+                <div class="card">
+                    <h4>Income</h4>
+                    <h2>₹50,000</h2>
+                </div>
 
-        </form>
-        <h2>h</h2>
+                <div class="card">
+                    <h4>Spent</h4>
+                    <h2>₹17,500</h2>
+                </div>
 
-        <h3>History</h3>
-        <ul id="list"></ul>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-box">
+                <h3>Expense Statistics</h3>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <!-- Recent -->
+            <div class="recent">
+
+                <h3>Recent Payments</h3>
+
+                <ul>
+                    <li>🍔 Food - ₹500</li>
+                    <li>🚌 Travel - ₹300</li>
+                    <li>🛍 Shopping - ₹1200</li>
+                    <li>📱 Internet - ₹400</li>
+                </ul>
+
+            </div>
+
+        </div>
 
     </div>
 
